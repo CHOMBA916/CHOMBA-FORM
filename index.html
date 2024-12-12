@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Business Registration (Kenya)</title>
+    <style>
+/* Paste the CSS code here */
+</style>
+<style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Form Container */
+        form {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Form Heading */
+        h1 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        /* Fieldset Styles */
+        fieldset {
+            border: none;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+
+        /* Legend Styling */
+        legend {
+            font-size: 1.2em;
+            color: #444444;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Label Styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        /* Input and Select Styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #0070ba;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 112, 186, 0.5);
+        }
+
+        /* Button Styling */
+        button {
+            display: block;
+            width: 100%;
+            background-color: #0070ba;
+            color: #ffffff;
+            font-size: 1em;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005c9e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            form {
+                padding: 15px;
+            }
+
+            legend {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="your-backend-endpoint" method="POST">
+        <!-- Business Information -->
+        <fieldset>
+            <legend>Business Information</legend>
+            <label for="businessName">Business Name:</label>
+            <input type="text" id="businessName" name="businessName" required>
+
+            <label for="businessType">Business Type:</label>
+            <select id="businessType" name="businessType" required>
+                <option value="soleProprietorship">Sole Proprietorship</option>
+                <option value="partnership">Partnership</option>
+                <option value="limitedCompany">Limited Company</option>
+                <option value="nonProfit">Non-Profit</option>
+            </select>
+
+            <label for="businessCategory">Business Category:</label>
+            <select id="businessCategory" name="businessCategory" required>
+                <option value="retail">Retail</option>
+                <option value="services">Services</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="businessEmail">Business Email:</label>
+            <input type="email" id="businessEmail" name="businessEmail" required>
+
+            <label for="businessPhone">Business Phone:</label>
+            <input type="tel" id="businessPhone" name="businessPhone" placeholder="e.g., +254700000000" required>
+
+            <label for="businessAddress">Business Address:</label>
+            <input type="text" id="businessAddress" name="businessAddress" required>
+        </fieldset>
+
+        <!-- Owner/Administrator Information -->
+        <fieldset>
+            <legend>Owner/Administrator Information</legend>
+            <label for="ownerName">Full Name:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="nationalID">National ID/Passport Number:</label>
+            <input type="text" id="nationalID" name="nationalID" required>
+
+            <label for="contactEmail">Contact Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail" required>
+
+            <label for="contactPhone">Contact Phone:</label>
+            <input type="tel" id="contactPhone" name="contactPhone" placeholder="e.g., +254700000000" required>
+        </fieldset>
+
+        <!-- Bank Information -->
+        <fieldset>
+            <legend>Bank Information</legend>
+            <label for="bankName">Bank Name:</label>
+            <input type="text" id="bankName" name="bankName" required>
+
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" id="accountNumber" name="accountNumber" required>
+
+            <label for="branchCode">Branch Code:</label>
+            <input type="text" id="branchCode" name="branchCode" required>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
